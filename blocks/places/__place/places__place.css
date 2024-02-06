@@ -1,0 +1,13 @@
+.places__place {
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr) 1fr;
+  row-gap: 48px;
+  column-gap: 40px;
+}
+
+@media (max-width: 450px) {
+  .places__place {
+    grid-template-columns: minmax(min-content, 1fr);
+    gap: 32px;
+  }
+}
